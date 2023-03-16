@@ -1,0 +1,27 @@
+{
+  "toplevel": true,
+  "keep_classnames": false,
+  "keep_fnames": false,
+  "parse": {
+    "bare_returns": true,
+    "html5_comments": true,
+    "shebang": true,
+  },
+  "compress": {
+    "drop_console": false,
+    "evaluate": true,
+    "passes": 3,
+    "keep_fnames": false,
+    "toplevel": true
+  },
+  "mangle": {
+    "toplevel": true,
+    "reserved": [
+      "$",
+    ],
+  },
+  "format": {
+    "comments": false,
+    "beautify": true,
+  }
+}

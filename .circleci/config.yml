@@ -1,0 +1,21 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.1.0
+jobs:
+  checks:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - node/install:
+          install-yarn: true 
+      - checkout
+      - node/install-packages:
+          cache-only-lockfile: true 
+          check-cache: always 
+          include-branch-in-cache-key: true 
+          pkg-manager: yarn 
+          with-cache: true
+workflows:
+  checks-workflow:
+    jobs:
+      - checks
