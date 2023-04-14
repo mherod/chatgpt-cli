@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "commander": "^10.0.0",
-    "consola": "^2.15.3",
+    "consola": "^3.0.2",
     "destr": "^1.2.2",
     "openai": "^3.2.1"
   }
